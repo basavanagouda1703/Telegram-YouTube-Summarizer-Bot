@@ -25,19 +25,20 @@ python main.py
 1. Project Structure :
 
 telegram-youtube-bot/
-|---main.py                 
-|---config.py               
 │
-|---handlers/              
-│    |---message_handler.py
+├── main.py                
+├── config.py              
 │
-|---services/              
-│    |---transcript_service.py
-│    |---llm_service.py
+├── handlers/               
+│   └── message_handler.py
 │
-|---utils/                  
-     |---youtube_utils.py
-     |---language_utils.py
+├── services/              
+│   ├── transcript_service.py
+│   └── llm_service.py
+│
+└── utils/                  
+    ├── youtube_utils.py
+    └── language_utils.py
 
 2. Data Flow Overview:
 
