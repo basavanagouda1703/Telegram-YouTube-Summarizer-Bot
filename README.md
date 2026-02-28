@@ -25,32 +25,20 @@ python main.py
 # 1. Project Structure :
 
 telegram-youtube-bot/
-│
 ├── main.py                
 ├── config.py              
-│
 ├── handlers/               
 │   └── message_handler.py
-│
 ├── services/              
 │   ├── transcript_service.py
 │   └── llm_service.py
-│
 └── utils/                  
     ├── youtube_utils.py
     └── language_utils.py
 
 # 2. Data Flow Overview:
 
-   User → Telegram Bot → Message Handler
-                      ↓
-              Transcript Service
-                      ↓
-              YouTube Title Fetch
-                      ↓
-               LLM Service (Ollama)
-                      ↓
-                  Response
+   User -> Telegram Bot -> Message Handler ->Transcript Service -> YouTube Title Fetch -> LLM Service (Ollama) -> Response
 
 # 3. Component Responsibilities:
    
