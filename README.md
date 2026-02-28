@@ -1,4 +1,5 @@
 # Telegram-YouTube-Summarizer-Bot
+A modular Telegram bot that summarizes YouTube videos, extracts clickable timestamps, and enables context-aware Q&A using a local LLM (Llama3 via Ollama). Supports multilingual responses (English & Kannada) with clean architecture, transcript caching, and structured output generation.
 
 # Setup Steps
 1. Install Dependencies
