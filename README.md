@@ -113,3 +113,6 @@ i. Advantages:
 ->Faster integration
 ii. Trade-off:
 ->Model output quality depends on LLM capability
+
+
+<img width="1920" height="1020" alt="Screenshot 2026-02-28 230629" src="https://github.com/user-attachments/assets/60669210-2c40-4676-86ec-4aae913f4cfc" />
