@@ -22,7 +22,7 @@ Start the application by running:
 python main.py
 
 # Architecture
-1. Project Structure :
+# 1. Project Structure :
 
 telegram-youtube-bot/
 │
@@ -40,7 +40,7 @@ telegram-youtube-bot/
     ├── youtube_utils.py
     └── language_utils.py
 
-2. Data Flow Overview:
+# 2. Data Flow Overview:
 
    User → Telegram Bot → Message Handler
                       ↓
@@ -52,7 +52,7 @@ telegram-youtube-bot/
                       ↓
                   Response
 
-3. Component Responsibilities:
+# 3. Component Responsibilities:
    
 i. main.py
 ->Initializes Telegram bot
@@ -87,3 +87,41 @@ vi. language_utils.py
 ->Defaults to English
 
 # Design Trade-offs
+# 1. Using Ollama (Local LLM) Instead of OpenAI API
+i. Advantages:
+->No API cost
+->Works offline
+->Full control over model
+->Privacy-friendly
+ii. Trade-off:
+->Requires local system resources
+->Slower than cloud APIs
+->Limited by hardware capability
+
+# 2. Transcript Truncation (First 3000 Characters)
+Only a portion of transcript is sent to the model.
+i. Advantages:
+->Prevents context overflow
+->Improves response speed
+->Avoids model timeouts
+ii. Trade-off:
+->Very long videos may lose context from later sections
+
+# 3. In-Memory Caching Instead of Database
+Used dictionary cache for transcripts.
+i. Advantages:
+->Simple implementation
+->Faster response
+->Assignment scope appropriate
+ii. Trade-off:
+->Cache resets when bot restarts
+->Not persistent
+
+# 4. Language Support via Prompt Engineering
+Instead of using a translation API.
+i. Advantages:
+->Simpler architecture
+->No external API
+->Faster integration
+ii. Trade-off:
+->Model output quality depends on LLM capability
