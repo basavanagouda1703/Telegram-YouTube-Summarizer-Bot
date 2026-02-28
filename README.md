@@ -114,5 +114,24 @@ i. Advantages:
 ii. Trade-off:
 ->Model output quality depends on LLM capability
 
+# Output Results:
 
+1. Started the bot and uploaded the youtube link.
 <img width="1920" height="1020" alt="Screenshot 2026-02-28 230629" src="https://github.com/user-attachments/assets/60669210-2c40-4676-86ec-4aae913f4cfc" />
+
+2. Transcripted loaded and got the summary.
+<img width="1920" height="1020" alt="Screenshot 2026-02-28 230648" src="https://github.com/user-attachments/assets/59ad9ef2-4923-4c82-85ac-295d076f2dc5" />
+
+3. Asking question to the bot and gives the answer for asked question based on the transcript.
+<img width="1920" height="1020" alt="Screenshot 2026-02-28 230713" src="https://github.com/user-attachments/assets/668b8cfe-e37b-4b6d-91d3-44d6be04c347" />
+
+
+4. Giving /summary command and got the summary of the video.
+<img width="1920" height="1020" alt="Screenshot 2026-02-28 230732" src="https://github.com/user-attachments/assets/5c512b9c-c64e-4e22-868a-06be3ac4747f" />
+
+5. Giving /deepdive command and getting the deep insights of the video.
+<img width="1920" height="1020" alt="Screenshot 2026-02-28 230808" src="https://github.com/user-attachments/assets/bcee0db0-a8fe-4fac-9410-679bfcf4b33f" />
+<img width="1920" height="1020" alt="Screenshot 2026-02-28 230832" src="https://github.com/user-attachments/assets/a7ff2559-9f35-4df8-acb9-e1fee2486516" />
+
+6. Getting the summary in the local language(here used Kannada).
+<img width="1920" height="1020" alt="Screenshot 2026-02-28 230849" src="https://github.com/user-attachments/assets/a58bda07-6763-46b7-910a-fffdba0ff6a9" />
